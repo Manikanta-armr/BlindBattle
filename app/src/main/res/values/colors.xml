@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cross_color">#FF0000</color>
+    <color name="nought_color">#0000FF</color>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D7CCC8"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/top"
+        android:layout_height="180dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/boardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            style="@style/row">
+
+            <Button
+                android:id="@+id/a1"
+                style="@style/column"
+                android:onClick="boardTapped">
+            </Button>
+
+            <View
+                style="@style/vertical"/>
+
+            <Button
+                android:id="@+id/a2"
+                style="@style/column">
+            </Button>
+
+            <View
+                style="@style/vertical"/>
+
+            <Button
+                android:id="@+id/a3"
+                style="@style/column">
+            </Button>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal"/>
+
+        <LinearLayout
+            style="@style/row">
+
+            <Button
+                android:id="@+id/b1"
+                style="@style/column">
+            </Button>
+
+            <View
+                style="@style/vertical"/>
+
+            <Button
+                android:id="@+id/b2"
+                style="@style/column">
+            </Button>
+
+            <View
+                style="@style/vertical"/>
+
+            <Button
+                android:id="@+id/b3"
+                style="@style/column">
+            </Button>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal"/>
+
+        <LinearLayout
+            style="@style/row">
+
+            <Button
+                android:id="@+id/c1"
+                style="@style/column">
+            </Button>
+
+            <View
+                style="@style/vertical"/>
+
+            <Button
+                android:id="@+id/c2"
+                style="@style/column">
+            </Button>
+
+            <View
+                style="@style/vertical"/>
+
+            <Button
+                android:id="@+id/c3"
+                style="@style/column">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@android:color/transparent"
+        tools:layout_editor_absoluteY="560"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        tools:layout_editor_absoluteY="560"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
